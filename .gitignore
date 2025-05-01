@@ -1,0 +1,42 @@
+# Entorno virtual
+venv/
+.env/
+.venv/
+
+# PyCharm
+.idea/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de base de datos SQLite
+*.sqlite3
+
+# Archivos de entorno
+.env
+*.env
+
+# Archivos de log
+*.log
+
+# Archivos compilados o temporales
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.DS_Store
+Thumbs.db
+
+# Migraciones vacías
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+*/migrations/*.py~
+
+# Archivos de caché de Django
+*.cache
+
+# Node (    frontend)
+node_modules/

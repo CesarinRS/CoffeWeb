@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Init | Techno life</title>
+    <title>Inicio | Coffetariano</title>
 
     {% load static %}
 
@@ -72,24 +72,30 @@
     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0">
-	        <a href="#" class="link">
+            {% if GitHub %}
+	        <a href="{{ GitHub }}" class="link">
 	          <span class="fa-stack fa-lg">
 	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
 	          </span>
 	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
+            {% endif %}
+            {% if LinkedIn %}
+                <a href="{{ LinkedIn }}" class="link">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+            {% endif %}
+            {% if Instagram %}
+                <a href="{{ Instagram }}" class="link">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+            {% endif %}
 	    </p>
         <p class="m-0 mbt">
         	<a href="sample.html" class="link">Política de privacidad</a> ·
