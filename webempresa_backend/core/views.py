@@ -4,12 +4,8 @@ from django.shortcuts import render, HttpResponse
 
 """
 Inicio: /
-Historia: about-us/
-Contacto: contact-us/
-Visitanos: find-us/
-Servicios: services/
-Blog: blog/
-Politicas: politics/
+Historia: about/
+Visitanos: store/
 """
 
 def home(request):
@@ -21,6 +17,5 @@ def about(request):
 def store(request):
     return render(request, "core/store.html")
 
-def contact(request):
-    return render(request, "core/contact.html")
+
 
